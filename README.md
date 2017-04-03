@@ -17,9 +17,9 @@ gulpfile.js.      #其他文件的配置
 ##指令
 开发
 
-		gulp dev
+	gulp dev
 
 打包
 
-		gulp build
+	gulp build
 
