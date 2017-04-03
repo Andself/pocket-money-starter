@@ -33,14 +33,14 @@ gulp.task('html', () => {
     .pipe(gulp.dest('dist/'))
 })
 
-gulp.task('images', () => {
-  gulp.src('src/images/**/*')
+gulp.task('media', () => {
+  gulp.src('src/media/**/*')
     .pipe($.cache($.imagemin({
       progressive: true,
       interlaced: true
     })))
-    .pipe(gulp.dest('dist/images'))
-    .pipe($.size({title: 'images'}))
+    .pipe(gulp.dest('dist/media'))
+    .pipe($.size({title: 'media'}))
 })
 
 gulp.task('bundle', () => {
@@ -61,7 +61,7 @@ gulp.task('dev', ['html', 'style', 'bundle'], () => {
   gulp.watch(['src/**/*.html'], ['html', reload]);
   gulp.watch(['src/style/**/*.css'], ['style', reload]);
   gulp.watch(['src/**/*.js'], ['bundle', reload]);
-  gulp.watch(['src/images/**/*'], ['images', reload]);
+  gulp.watch(['src/media/**/*'], ['media', reload]);
 });
 
-gulp.task('build', ['html', 'style', 'bundle', 'images'])
+gulp.task('build', ['html', 'style', 'bundle', 'media'])
