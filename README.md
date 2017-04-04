@@ -1,8 +1,10 @@
 # pocket-money-starter
 
+
 > 一个简单的脚手架，适用于传统静态网页的开发，通过gulp构建，仅仅使用了autoprefixer处理css兼容以及使用webpack打包js
 > 
 > 尽情的使用css3和es6来浪吧！
+
 
 ## 目录说明
 
