@@ -20,6 +20,12 @@ gulpfile.js.      #其他文件的配置
 
 ## 指令
 
+安装
+
+	$ vue init Andself/pocket-money-starter project
+	$ cd project
+	$ npm i
+
 开发
 
 	gulp dev
