@@ -5,11 +5,9 @@ const del = require('del');
 const webpack = require('webpack')
 const webpackStream = require('webpack-stream')
 const autoprefixer = require('gulp-autoprefixer')
-const gulpLoadPlugins = require('gulp-load-plugins')
 const browserSync = require('browser-sync')
 const babel = require('gulp-babel')
 
-const $ = gulpLoadPlugins()
 const reload = browserSync.reload;
 
 gulp.task('clear', () => {
