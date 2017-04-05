@@ -35,12 +35,7 @@ gulp.task('html', () => {
 
 gulp.task('media', () => {
   gulp.src('src/media/**/*')
-    .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true
-    })))
     .pipe(gulp.dest('dist/media'))
-    .pipe($.size({title: 'media'}))
 })
 
 gulp.task('bundle', () => {
